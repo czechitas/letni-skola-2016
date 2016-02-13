@@ -243,18 +243,36 @@ a:visited { color: #5A8B86; }
 
 .partners {
 	background-color: white;
-	height: 53px;
+}
+
+.partners div {
+	text-align: center;
 }
 
 img.partner {
-	width: 100%;
+	max-width: 100%;
+	max-height: 40px;
+	margin: auto;
 }
 
-.important-info {
+.references {
 	background-color: #03124A;
 	color: white;
 }
 
-.important-info h2 {
+.references h2 {
 	color: white;
+}
+
+.btn-primary {
+	font-size: 26px;
+	width: 100%;
+	background-color: #e5007d;
+	color: white;
+	border-color: #e5007d;
+}
+
+.btn-primary:hover {
+	background-color: #a3156a;
+	border-color: #a3156a;
 }
