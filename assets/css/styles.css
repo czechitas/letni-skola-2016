@@ -24,7 +24,7 @@ p, .jumbotron p {
 
 a{ color: #CD503A; }
 a:hover, a:focus { color: #953726; }
-a:visited { color: #D87563; }
+a:visited { color: #03124A; }
 
 /********************************************************/
 /*                        Header                        */
@@ -223,17 +223,20 @@ a:visited { color: #5A8B86; }
 	background: -ms-linear-gradient(top,  #e5007d 0%,#03124A 100%);
 	background: linear-gradient(to bottom,  #e5007d 0%,#03124A 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5007d', endColorstr='#03124A',GradientType=0 );
+	/*background: url(../images/screen2.png) top center;*/
+	background-repeat: no-repeat;
 }
+
 .header h1 { color:white; font-family: Perfograma; }
 
 h1, h2, h3, h4, h5, h6 {
 	color: #e5007d;
-	font-family: Cocon;
+	font-family: Perfograma;
 }
 
-a{ color: #2d2d82; }
+a{ color: #e5007d; }
 a:hover, a:focus { color: #2d2d82; }
-a:visited { color: #5A8B86; }
+a:visited { color: #877680; }
 
 /**/
 
@@ -274,4 +277,20 @@ img.partner {
 .btn-primary:hover {
 	background-color: #a3156a;
 	border-color: #a3156a;
+}
+
+.menu a {
+	color: white;
+}
+
+.menu {
+	color: #e5007d;
+}
+
+.image-strip {
+	background: url(../images/2.jpg) bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 90px;
+	width: 100%;
 }
