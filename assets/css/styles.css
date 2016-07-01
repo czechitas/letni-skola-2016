@@ -1,9 +1,13 @@
 /********************************************************/
 /*                 Page background                      */
 /********************************************************/
+
+
+@font-face { font-family: Perfograma; src: url('../fonts/Perfograma_1.otf'); }
+@font-face { font-family: Cocon; src: url('../fonts/CoconPro-Regular_1.otf'); }
+
 body, .content {
-	@font-face { font-family: Perfograma; src: url('../fonts/Perfograma_1.otf'); }
-	@font-face { font-family: Cocon; src: url('../fonts/CoconPro-Regular_1.otf'); }
+    font-family: "Open sans", Helvetica, Arial;
 	background: #fff;
 	color:#333;
 }
@@ -13,8 +17,9 @@ body, .content {
 /*                     Typography                       */
 /********************************************************/
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Open sans", Helvetica, Arial;
+	font-family: Cocon;
 	font-weight: 300;
+    color: #e5007d;
 }
 
 p, .jumbotron p {
@@ -27,7 +32,7 @@ p, .jumbotron p {
 /********************************************************/
 
 .header h1 {
-	font-family: "Open sans", Arial;
+	font-family: Perfograma;
 	font-size: 40px;
 	font-weight: bold;
 	margin: 35px 0 10px 0;
@@ -37,7 +42,7 @@ p, .jumbotron p {
 }
 .header h2 {
 	color: rgba(255,255,255,.9);
-	font-family: Georgia;
+	font-family: Cocon;
 	font-size: 17px;
 	font-weight: normal;
 	margin: 0 0 25px 0;
@@ -46,7 +51,7 @@ p, .jumbotron p {
 }
 .header p { font-size: 15px; line-height: 1.2em;}
 .header .lead {
-	font-family: "Open sans", Arial;
+    font-family: Cocon;
 	color: rgba(255,255,255,.9);
 	line-height: 1.2em;
 	font-size: 18px;
@@ -77,7 +82,7 @@ p, .jumbotron p {
 	background:#f5f5f5;
 }
 
-.content .lead { font-family: Georgia; font-style: italic; color:#999; }
+.content .lead { font-style: italic; color:#999; }
 
 .space-before { padding-top:20px; }
 .space-after { padding-bottom:20px; }
@@ -175,11 +180,6 @@ a:visited { color: #5A8B86; }
 
 .header h1 { color:white; font-family: Perfograma; }
 
-h1, h2, h3, h4, h5, h6 {
-	color: #e5007d;
-	font-family: "Open sans";
-}
-
 a{ color: #e5007d; }
 a:hover, a:focus { color: #2d2d82; }
 a:visited { color: #877680; }
@@ -201,10 +201,16 @@ a:visited { color: #877680; }
 
 img.partner {
 	max-width: 100%;
-	max-height: 60px;
+	max-height: 40px;
 	margin: auto;
 	padding: 6px;
 }
+
+
+@media (min-width: 992px) {
+	img.partner-big { width: 20%;}
+}
+
 
 .references {
 	background-color: #03124A;
@@ -220,6 +226,7 @@ img.partner {
 	background-color: #e5007d;
 	color: white;
 	border-color: #e5007d;
+    font-family: Perfograma;
 }
 
 .btn-primary:hover {
@@ -235,20 +242,9 @@ img.partner {
 	color: #e5007d;
 	text-align: center;
 	width: 100%;
-	position: absolute;
-	bottom: 0;
-}
-
-.image-strip {
-	background: url(../images/2.jpg) bottom center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 90px;
-	width: 100%;
 }
 
 header {
-	height: 100vh;
 }
 
 /*INDEX PAGE */
