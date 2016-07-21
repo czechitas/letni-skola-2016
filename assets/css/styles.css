@@ -191,8 +191,17 @@ a:visited { color: #877680; }
 }
 
 .partners {
+    padding: 5px;
 	background-color: white;
 	width: 100%;
+}
+
+@media (min-width: 992px) {
+    .partners {
+        line-height: 80px;
+    }
+    
+    img.partner-big { width: 60%;}
 }
 
 .partners div {
@@ -201,16 +210,10 @@ a:visited { color: #877680; }
 
 img.partner {
 	max-width: 100%;
-	max-height: 40px;
+	max-height: 80px;
 	margin: auto;
 	padding: 6px;
 }
-
-
-@media (min-width: 992px) {
-	img.partner-big { width: 20%;}
-}
-
 
 .references {
 	background-color: #03124A;
